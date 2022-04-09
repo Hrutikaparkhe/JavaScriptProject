@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calculator.css" />
+    <script src="./calculator.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 class="header">Calculator</h1>
+    <div class="container">
+      <form action="">
+        <div class="calculatorBody">
+          <div class="inputField">
+            <input type="text" class="input" id="result" />
+          </div>
+          <div class="operationButtons">
+            <input type="button" value="+" class="btn" onclick="display('+')"/>
+            <input type="button" value="-" class="btn" onclick="display('-')"/>
+            <input type="button" value="/" class="btn" onclick="display('/')"/>
+            <input type="button" value="*" class="btn " onclick="display('*')"/>
+          </div>
+          <div class="numbers1">
+            <div class="no1">
+              <input type="button" value="7" class="btn no" onclick="display('7')"/>
+              <input type="button" value="8" class="btn no" onclick="display('8')" />
+              <input type="button" value="9" class="btn no" onclick="display('9')"/>
+              <input type="button" value="=" class="btn equals" onclick="calculate()" />
+            </div>
+            <!-- <input type="button" value="" class="btn no">n> -->
+            <div class="no1">
+              <input type="button" value="4" class="btn no" onclick="display('4')" />
+              <input type="button" value="5" class="btn no" onclick="display('5')" />
+              <input type="button" value="6" class="btn no"onclick="display('6')" />
+            </div>
+            <div class="no1">
+              <input type="button" value="1" class="btn no" onclick="display('1')"/>
+              <input type="button" value="2" class="btn no" onclick="display('2')" />
+              <input type="button" value="3" class="btn no" onclick="display('3')" />
+            </div>
+            <div class="no1">
+              <input type="button" value="0" class="btn no" onclick="display('0')"/>
+              <input type="button" value="." class="btn no" onclick="display('.')"/>
+              <input type="button" value="C" class="btn no" onclick="clearScreen()" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
